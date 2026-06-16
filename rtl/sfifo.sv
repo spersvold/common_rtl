@@ -13,7 +13,7 @@
 // ========================================================================
 //
 
-module scfifo
+module sfifo
  #(
    parameter  int  WIDTH = 8,
    parameter  int  LGSIZ = 4,
@@ -90,4 +90,4 @@ module scfifo
          default: ;
        endcase
 
-endmodule // scfifo
+endmodule // sfifo

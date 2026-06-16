@@ -24,7 +24,7 @@ All source lives under [`rtl/`](rtl).
 
 | Module | Description | Parameters | Depends on |
 | --- | --- | --- | --- |
-| `scfifo` | Single-clock synchronous FIFO with `full`/`empty`/`fill` status and overflow/underflow protection. Read data is combinational (look-ahead). | `WIDTH`, `LGSIZ` (log2 depth) | — |
+| `sfifo` | Single-clock synchronous FIFO with `full`/`empty`/`fill` status and overflow/underflow protection. Read data is combinational (look-ahead). | `WIDTH`, `LGSIZ` (log2 depth) | — |
 | `dcfifo` | Dual-clock (asynchronous) FIFO with Gray-coded pointers and synchronized clears. Optional first-word-fall-through. Status flags on both write and read sides. | `AWIDTH`, `DWIDTH`, `FWFT` | `synchronizer`, `bram_sdp` |
 | `queue` | Fall-through register queue; output always presents level 0. Includes a programmable almost-full and built-in over/underflow assertions. | `DEPTH`, `WIDTH`, `AFULL` | — |
 

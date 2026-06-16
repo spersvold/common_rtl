@@ -31,7 +31,7 @@ cdc_tgl.sv
 cdc_mcp.sv
 
 // --- FIFOs / queues ---
-scfifo.sv
+sfifo.sv
 queue.sv
 dcfifo.sv
 
